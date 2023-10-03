@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input2{
+            display: none;
+        }        
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="first" id="first">
+        <input type="text" name="" placeholder="second" class="input2" id="input2">
+        <button type="button" id="button" onclick="hide()">show second input</button>
+        <button type="button" id="button" onclick="show()">show frist input</button>
+        <!-- <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>         -->
+    </div>
+    <script>               
+        
+        function hide() {
+            let first = document.getElementById('first')
+            let second = document.getElementById('input2')
+
+            first.style.display = 'none';
+            second.style.display = 'inline'
+                        
+        }
+        function show() {
+            let first = document.getElementById('first')
+            let second = document.getElementById('input2')
+
+            first.style.display = 'inline';
+            second.style.display = 'none';
+                        
+        }
+
+        let p1 = 3;
+        let p2 = 4;
+        let total = p1 + p2;
+        // switch (total) {
+        //     case 0:
+        //         alert('0')
+        //         break;
+        //     case 7:
+        //         alert('1')
+        //         break;
+        //     default:
+        //         alert('2')
+        //         break;
+        // }
+        // const points = [40, 100, 1, 5, 25, 10];
+        //     alert(points.sort(function () { return 0.5 - Math.random() }))
+            
+
+            
+
+        // const arr = [2,3,6,1,4,10,9,8,0];        
+        // console.log(arr.sort(function (a,b) { return a - b }));
+   
+                const points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("demo").innerHTML = points;
+
+                function myFunction() {
+  for (let i = points.length -1; i > 0; i--) {
+                    let j = Math.floor(Math.random() * (i+1));
+                let k = points[i];
+                points[i] = points[j];
+                points[j] = k;
+                
+                alert(j)
+  }
+                document.getElementById("demo").innerHTML = points;
+}
+
+    </script>
+
+    <script>
+        function isEvenorOdd(number){
+            if (number %2 === 0){
+                return  'even';
+            }
+            else{
+                return  'odd';
+            }
+        }
+        alert (isEvenorOdd(7))
+
+        function type(number){
+            if (typeof (number)=== 'number'){
+                return  'number';
+            }
+            else{
+                return  'others';
+            }
+        }
+        function check(x, y){
+            if  (x > y){
+                return  x;
+            }
+            else{
+                return  y;
+            }
+        }
+        // alert (check(7,2))
+
+        function compareThreeNumbers(x,y,z){
+            if  (x > y){
+                return x;
+            }
+            else if(x > z){
+                return x
+            }
+            else if(y > z){
+                return y
+            }
+            else if (y > x) {
+                return y
+            }
+
+            else{
+                return z
+            }
+            
+        }
+
+        alert(compareThreeNumbers(7,5,4))
+        for (let i = 0; i < 10; i++) {
+            
+            
+        }        
+    </script>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {     
+            $('.input2').show()
+            function mytest(){
+                $('#first').hide();
+
+            }
+            });
+    </script>
+</body>
+</html>

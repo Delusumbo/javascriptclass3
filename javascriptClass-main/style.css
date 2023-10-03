@@ -1,0 +1,18 @@
+nav{
+    display: inline;
+    position:relative;
+    top: -20px;  
+    left: 250px;  
+}
+
+nav a{
+    padding-left: 80px;
+}
+
+.banner{
+    background-image: url(images/banner2.jpg);
+    padding: 100px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

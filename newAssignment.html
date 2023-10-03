@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">Enter any number;</label>
+
+    <input type="number" id="odd">
+
+    <button onclick="evenOrOdd()">Check</button>
+
+    <p id="resultA"></p>
+
+
+    <script>
+        function evenOrOdd(){
+            var number = parseInt(document.getElementById('odd').value);
+
+            var resultA = document.getElementById('resultA');
+
+            if (!isNaN(number)){
+                if(number % 2 === 0){
+                    resultA.textContent = number +'' + 'is Even';
+                }
+               else{
+                resultA.textContent = number + '' + 'is Odd';
+               }
+            }
+            else {
+                resultA.textContent = 'Please enter a valid number';
+            }
+        }
+    </script>
+
+
+   <label for="number">Number or not;</label>
+
+    <input type="text" id="type">
+ 
+    <button onclick="numberType()" type="button">Check Number Type</button>
+
+    <p id="resultB"></p>
+
+   <script>
+
+    function numberType(){
+        var typeNumber = document.getElementById('type').value;
+        var TypeNum = parseFloat(typeNumber);
+
+        var resultB = document.getElementById('resultB');
+
+        if (!isNaN(number)) {
+                if (number.isInteger(number)) {
+                    resultElement.textContent = number + " is an Integer.";
+                } else {
+                    resultElement.textContent = number + " is a Float (or Double).";
+                }
+            }
+             else {
+                resultElement.textContent = inputNumber + " is Not a valid number.";
+            }
+        
+
+
+        if (typeof(typeNumber) === 'number'){
+            resultB.textContent = 'number' ;
+            
+        }
+        else{
+            resultB.textContent = others;
+        }
+    }
+   </script>
+</body>
+</html>

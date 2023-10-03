@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p id="demo"></p> 
+    <button onclick="myColor('500000','500000')">calculate</button>
+    
+    
+    <script>
+        let x;
+        x = 5;        
+        z = x +1
+        // console.log(z)      
+        // const y = 6;    
+        {
+            const y = 4
+            // console.log(y)
+            z = x + y
+        }      
+        
+        const car = { name: "Fiat", model: "500", color: "white", type : function(){
+            return this.model
+        }};
+        console.log(car.type());
+        const cars = ["Saab", "Volvo", "BMW"];
+
+            // You can change an element:
+            cars[0] = "Toyota";
+
+            // You can add an element:
+            cars.push("Audi");
+            // console.log(cars);
+
+
+        function myColor(a,b){
+            var y = 4;            
+            document.getElementById('demo').innerHTML = a+b+y
+            return document.getElementById('calc').innerHTML = b-a            
+        }                
+        // console.log(y)
+    </script>
+
+    <script>
+          function myColor(x,y) {
+             z = x + y
+             document.getElementById('demo').innerHTML = z
+          }           
+
+          if (x == y && x < y) {
+            // alert(y);
+          }
+          else{
+            // alert(x)
+          }
+    </script>
+
+    <script>
+        let p ;        
+        const u = 5;        
+        {
+            let p;
+            const u = 6e10;
+            // alert(typeof(u))
+            let dollars = '$' + u;
+            // alert(dollars)
+        }
+        {
+            const u = 4            
+        }
+        
+            const person = { firstName: 'John"s', lastName: "Doe" };
+            // alert((person.firstName))
+
+
+            const boys = ['Chika', 'Sunmbo','Unique', 'Emmanuel' ]
+            // alert((boys[0]))
+
+
+            function myColor(x,y){
+                   
+                alert(myColor(1,3))
+                return x += y                 
+
+            }
+
+            function helloWorld(hello){
+                hello = document.getElementById("calc").innerHTML= 'Hello World';
+                return hello;
+            }
+
+            function square(n){                
+                return document.getElementById('square').innerHTML = n ** 2;
+            }
+
+            function tofahrenheit(){
+                let c = document.getElementById('text').value;
+                return document.getElementById('fahrenheit').innerHTML = (c * (9/5)) + 32;
+            }
+
+            const persons = {
+                    firstName: "John",
+                    lastName: "Doe",
+                    id: 5566,
+                    fullName: function () {
+                        return this.firstName + " " + this.lastName;
+                    }                      
+                };
+
+                // alert(persons.fullName())
+
+        
+    </script>
+    <p id="calc">we are working</p>
+    <p id="square">we are working</p>
+    <p id="fahrenheit">we are working</p>
+    <p id="result">we are working</p>
+    <input type="text" onkeydown="tofahrenheit()" id="text">    
+    <button onclick="helloWorld()">show assignment 1</button>
+    <button onclick="square(4)">show assignment 2</button>
+    <button onclick="tofahrenheit(10)">show assignment 3</button>\
+    <!-- <p id="demo"></p> -->
+    
+
+  <ul>
+    <span id="demo"></span>
+  </ul>
+    
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango",1];
+        const fruits2 = [1,2,3,4];
+        let fLen = fruits.length;
+        
+
+        let fru = fruits[4].toString();
+        // alert(typeof(fru));
+        // alert(fruits.pop());
+        // alert(fruits.push('Pineapple'));
+        const fruits3 = fruits.concat(fruits2)
+        console.log(fruits3)
+
+        const myArr = [[1, 2], [3, 4,7], [5, 6]];
+        console.log(myArr)
+
+        
+        for (let i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    background-image: url(../images/banner.jpg);
+    /* height: 100px; */
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.back{
+    margin: auto;
+    width: 600px;
+}
+.main-body h1{
+    text-align: justify;
+}
+.main-body{
+    background-color: white;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.main-body h4{
+    text-align: center;    
+}
+button{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+}
+input[type="email"],input[type="password"],input[type="text"]{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+.facebook{
+    background-color: #3b5998;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.twitter{
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.list{
+    height: 10px;
+    border-radius: 100%;
+    color: pink;
+    width: 10px;
+}
+
+button[type="submit"]{
+    color: white;
+    background: #fbbb92;
+    margin-top: 10px;
+}
+
+.row{
+    background-color: antiquewhite;
+    padding: 100px 20px;  
+}
+
+.login-btn{
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: pink;
+    border: none;
+}
+.line{
+    border-left: 1px solid ;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.color{
+    color: red;
+}

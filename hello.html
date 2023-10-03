@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="mystyle.js"></script>
+</head>
+<body>
+    <Script>
+        getUsername = sessionStorage.getItem('adun');
+
+        document.getElementById('passwordError').innerHTML = 'Hello '+getUsername+' '
+        sessionStorage.setItem('adun', '');
+    </Script>
+</body>
+</html>

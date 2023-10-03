@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+      
+    <p>Function to print the "Hello World" message</p>
+    <p id="text"></p>
+    <script>  
+        function helloWorld(hello)
+        {
+           document.getElementById("text").innerHTML = '"Hello World"';
+         return hello;
+        }
+        
+    </script>
+    <button onclick="helloWorld('hello')">Show Assignment 1</button>
+
+
+        <p>Assignment 2</p>
+    <p>Function that returns square of numbers</p>
+    <p id="square"></p>
+    <script>
+        function squareNumber(x)
+        {
+          return x ** 2;
+        }
+        document.getElementById("square").innerHTML = squareNumber(2);
+    </script>
+    <button onclick="squareNumber(x)">Show Assignment 2</button>
+
+
+        <p>Assignment 3</p>
+    <p>Function that converts Celsius to Fahrenheit</p>
+    <p id="fahrenheit"></p>
+    <script>
+        function toFahrenheit(C)
+        {
+            return (C * 9/5) + 32
+        }
+        document.getElementById("fahrenheit").innerHTML = toFahrenheit(25);
+    </script>
+
+
+        <p>Assignment 4</p>
+    <p>Function to find the area of a Rectangle </p>
+    <p id="rectangle"></p>
+    <script>
+        function rectangleArea(L,B){
+            return L * B
+        }
+        document.getElementById("rectangle").innerHTML = rectangleArea(4,9);
+    </script>
+
+
+        <p>Assignment 5</p>
+    <p>Function to find the area of a Circle </p>
+    <p id="circle"></p>
+    <script>
+        function circleArea(r){
+            return (22/7) * (r ** 2)
+        }
+        document.getElementById("circle").innerHTML = circleArea(9);
+    </script>
+
+
+        <p>Assignment 6</p>
+    <p>Function to find the perimeter of a Circle </p>
+    <p id="perimeter"></p>
+    <script>
+        function circlePerimeter(r){
+            return 2 * (22/7) * r
+        }
+        document.getElementById("perimeter").innerHTML = circlePerimeter(7);
+    </script>
+
+
+
+
+
+
+    <p>Additional Operation</p>
+  
+    <input type="text" id="add1">
+ 
+    <input  type="text" id="add2">
+ 
+    <p id="result1"></p>
+ 
+    <button onclick="add()" type="button">Add</button>
+
+    <script>
+     
+        function add(){
+        
+            input1 =  document.getElementById("add1").value;
+
+            input2 =  document.getElementById("add2").value;
+
+            input_1 = parseInt(input1);
+
+            input_2 = parseInt(input2);
+
+            document.getElementById('result1').innerHTML = input_1 + input_2;
+        }
+    </script>
+
+
+
+    <p>Subtraction Operation</p>
+  
+    <input type="text" id="sub1">
+ 
+    <input  type="text" id="sub2">
+ 
+    <p id="result2"></p>
+ 
+    <button onclick="sub()" type="button">Subtract</button>
+
+    <script>
+     
+        function sub(){
+        
+            input1 =  document.getElementById("sub1").value;
+
+            input2 =  document.getElementById("sub2").value;
+
+            document.getElementById('result2').innerHTML = input1 - input2;
+        }
+    </script>
+
+
+
+    <p>Multiplication Operation</p>
+  
+    <input type="text" id="mul1">
+ 
+    <input  type="text" id="mul2">
+ 
+    <p id="result3"></p>
+ 
+    <button onclick="mul()" type="button">Multiply</button>
+
+    <script>
+     
+        function mul(){
+        
+            input1 =  document.getElementById("mul1").value;
+
+            input2 =  document.getElementById("mul2").value;
+
+            document.getElementById('result3').innerHTML = input1 * input2;
+        }
+    </script>
+
+
+
+    <p>Division Operation</p>
+  
+    <input type="text" id="div1">
+ 
+    <input  type="text" id="div2">
+ 
+    <p id="result4"></p>
+ 
+    <button onclick="div()" type="button">Divide</button>
+
+    <script>
+     
+        function div(){
+        
+            input1 =  document.getElementById("div1").value;
+
+            input2 =  document.getElementById("div2").value;
+
+            document.getElementById('result4').innerHTML = input1 / input2;
+        }
+    </script>
+
+
+
+
+        `click` - Listens for mouse clicks.
+        2. `mouseenter` - Triggered when the mouse enters an element.
+        3. `mouseleave` - Fired when the mouse leaves an element.
+        4. `keydown` - Listens for a key press.
+        5. `keyup` - Triggered when a key is released.
+        6. `submit` - Listens for form submissions.
+        7. `focus` - Fired when an element receives focus.
+        8. `blur` - Triggered when an element loses focus.
+        9. `change` - Listens for changes in input fields, checkboxes, and radio buttons.
+        10. `load` - Fired when a resource (e.g., an image) has finished loading.
+        11. `unload` - Triggered when a page or resource is unloaded.
+        12. `resize` - Listens for changes in the window size.
+        13. `scroll` - Fired when an element is scrolled.
+        14. `mousedown` - Triggered when the mouse button is pressed.
+        15. `mouseup` - Listens for the release of the mouse button.
+        16. `touchstart` - Fired when a touch event begins.
+        17. `touchend` - Triggered when a touch event ends.
+        18. `contextmenu` - Listens for a right-click (or context menu) event.
+        19. `input` - Fired when the value of an input field changes.
+        20. `mouseenter` - Triggered when the mouse enters an element.
+
+
+        `dblclick` - Listens for double clicks with the mouse.
+        2. `contextmenu` - Triggered when the context menu is requested (usually by right-clicking).
+        3. `dragstart` - Fired when an element is dragged.
+        4. `dragend` - Triggered when a drag operation is completed.
+        5. `mouseenter` - Listens for mouseenter events on an element.
+        6. `mouseleave` - Fired when the mouse leaves an element.
+        7. `touchmove` - Triggered when a touch point is moved along the surface.
+        8. `wheel` - Listens for mouse wheel events (scrolling).
+        9. `animationstart` - Fired when a CSS animation starts.
+        10. `animationend` - Triggered when a CSS animation completes.
+
+
+        <script>
+
+            function number(){
+                
+            }
+        </script>
+
+
+    <script src="jquery.js"></script>
+    
+    
+
+  
+   
+</body>
+</html>
